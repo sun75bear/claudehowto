@@ -12,7 +12,7 @@ flowchart TD
     C -->|手元に入れたくない| F["Web 版"]
 ```
 
-## 手順1: Windows は先に Git を入れる
+## 手順1: 下準備（Windows のみ必要）
 
 === "Windows"
 
@@ -37,6 +37,8 @@ flowchart TD
 === "Mac"
 
     - [macOS 版](https://claude.ai/api/desktop/darwin/universal/dmg/latest/redirect)（Intel / Apple Silicon 共通）
+
+リンクが切れていたら [claude.com/download](https://claude.com/download) から辿れます。
 
 ## 手順3: サインインして Code タブを開く
 
@@ -88,11 +90,7 @@ flowchart TD
 
     作業フォルダに移動して `claude` と打つと起動します。初回はブラウザが開くのでサインインを。うまくいかないときは `claude doctor` で自己診断できます。
 
-??? note "参考: その他の入口"
-
-    **エディタ拡張** — VS Code は拡張機能の検索欄で「Claude Code」を探すだけ。JetBrains 系はプラグインに加えて CLI が必要です。
-
-    **Web版・モバイル** — [claude.ai/code](https://claude.ai/code) なら手元に何も入れずに使えます。
+エディタ拡張は VS Code の拡張機能検索で「Claude Code」を探すだけ。手元に何も入れたくない場合は [claude.ai/code](https://claude.ai/code) がブラウザで動きます。
 
 !!! note "2026年8月時点の手順です"
     最新は [公式のクイックスタート](https://code.claude.com/docs/en/desktop-quickstart) を確認してください。
