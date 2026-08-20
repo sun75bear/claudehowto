@@ -73,5 +73,8 @@ git push
 
 - ビルドは `mkdocs build --strict` で実行しており、リンク切れがあると失敗します
 - 料金・手順は 2026年8月時点の情報です。本文の `!!! note` に日付を明記しています
+- 図は Mermaid で書いています（```` ```mermaid ```` フェンス）。`mkdocs.yml` の `pymdownx.superfences.custom_fences` で有効化。**Material は mermaid.js を unpkg の CDN から読み込むため、図の描画にはネット接続が必要**です
+- Material は図の SVG を **closed shadow root** に入れるため、`querySelector('svg')` では中身を検査できません。描画成功の判定は「`<pre class="mermaid">` が `<div class="mermaid">` に置換されたか」で行います
+- 使えるのはフローチャート／シーケンス／状態／クラス／ER の5種のみ。円グラフ・ガントはモバイルで崩れるため使わないこと
 - 日本語見出しへのアンカーリンクは自動採番（`#_3` など）で壊れやすいため、リンク先にする見出しには `## 見出し { #explicit-id }` で明示 ID を付けています
 - 将来 S3 に移す場合は `mkdocs build` が生成する `site/` をそのまま同期すれば動きます

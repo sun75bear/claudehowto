@@ -46,7 +46,11 @@ markdown_extensions:
   - md_in_html
   - tables
   - pymdownx.details                 # 折りたたみ
-  - pymdownx.superfences             # 高機能コードブロック（タブ内に入れるのに必要）
+  - pymdownx.superfences:            # 高機能コードブロック（タブ内・図の描画に必要）
+      custom_fences:
+        - name: mermaid                # ```mermaid を図としてレンダリングする
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:                 # === "Windows" / === "Mac" のタブ切替
       alternate_style: true
   - pymdownx.emoji:
