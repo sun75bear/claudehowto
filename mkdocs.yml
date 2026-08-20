@@ -61,22 +61,11 @@ markdown_extensions:
       toc_depth: 3
 
 nav:                                 # 章の並び順をここで固定する
-  - はじめに:
-      - このサイトについて: index.md
-      - 1. なぜ Claude Code なのか: 01-why-claude-code.md
-  - 使い始める:
-      - 2. Pro を契約する: 02-pro-plan.md
-      - 3. インストールする: 03-setup.md
-      - 4. 最初のセッション: 04-first-session.md
-  - 実際に使う:
-      - 5. 実例集（コードを書かない仕事）: 05-examples.md
-      - 6. 実例集（コードを書く人向け）: 06-examples-dev.md
-      - 7. 使いこなす: 07-power-up.md
-  - 補足:
-      - 8. チャットとの使い分け: 08-with-chat.md
-      - 9. 気をつけること: 09-cautions.md
-  - 困ったとき:
-      - 10. FAQ・トラブル対応: 10-faq.md
-      - 用語集とリンク集: 99-glossary.md
+  - このサイトについて: index.md
+  - 1. 何ができるか: 01-what-it-does.md
+  - 2. Pro を1か月試す: 02-pro-trial.md
+  - 3. インストールする: 03-install.md
+  - 4. 最初に動かす: 04-first-run.md
+  - 5. この先は自分で: 05-next.md
 
 copyright: 2026年8月時点の情報にもとづいて書いています

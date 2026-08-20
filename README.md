@@ -2,7 +2,9 @@
 
 Claude Code の契約から実務での使い方までを紹介する静的サイトです。Markdown で書き、MkDocs Material でビルドして GitHub Pages に公開します。
 
-**主題は Claude Code。** チャット（Claude.ai）は他社サービスと横並びで差別化にならないため、「使い分け」の1ページに留めています。読者には非開発者を含むため、ターミナルではなく**デスクトップアプリを主軸**に説明しています。
+**主題は「Claude Code を Pro で1か月試す」。** 使い方の解説は世に溢れているため意図的に扱わず、その手前（何ができるか／契約と即解約による1か月お試し／1か月後の挙動／インストール／最初の2例）に絞っています。読者には非開発者を含むため、ターミナルではなく**デスクトップアプリを主軸**に説明。
+
+全6ページ、読了30分が設計目標です。**ページを増やしたくなったら、まず「それは公式ドキュメントや YouTube に任せられないか」を考えてください。**
 
 公開URL: （リポジトリ作成後にここへ記入）
 
@@ -67,7 +69,7 @@ git push
 
 本文中に `<!-- TODO(画像): ... -->` の形でプレースホルダを置いてあります。Claude Code デスクトップアプリで撮影し、`docs/assets/img/` に指定のファイル名で保存したうえで、コメントを `![説明](assets/img/xxx.png)` に置き換えてください。
 
-必要な8枚: `desktop-code-tab.png` / `select-folder.png` / `permission-mode.png` / `manual-approval.png` / `diff-view.png` / `settings-usage.png` / `slash-commands.png` / `parallel-sessions.png`
+必要な4枚: `desktop-code-tab.png` / `select-folder.png` / `permission-mode.png` / `settings-usage.png`
 
 ## メモ
 
