@@ -1,0 +1,76 @@
+# サイト全体の設定。ここ1ファイルで見た目・機能・章立てが決まる。
+site_name: はじめての Claude
+site_description: 契約から実務での使い方まで、Claude をゼロから始めるための案内
+
+# TODO: リポジトリを作ったら、次の3行のコメントを外して <USER> / <REPO> を実際の名前にする
+#        （site_url を設定するとローカルプレビューも /<REPO>/ 配下になります）
+# site_url: https://<USER>.github.io/<REPO>/
+# repo_url: https://github.com/<USER>/<REPO>
+# edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ja                       # UI の文言を日本語化
+  palette:                           # ライト / ダークの切替ボタンを出す
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+  features:
+    - navigation.sections            # 左サイドバーを章ごとにグループ表示
+    - navigation.top                 # 「上へ戻る」ボタン
+    - navigation.footer              # 前後のページへのリンクを下部に出す
+    - content.code.copy              # コードブロックにコピーボタン
+    - search.suggest                 # 検索の候補表示
+    - search.highlight               # 検索語をページ内でハイライト
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:                          # 日本語の全文検索を有効化
+        - ja
+        - en
+
+markdown_extensions:
+  - admonition                       # !!! note の注意書きボックス
+  - attr_list                        # 画像やリンクに属性を付ける
+  - md_in_html
+  - tables
+  - pymdownx.details                 # 折りたたみ
+  - pymdownx.superfences             # 高機能コードブロック（タブ内に入れるのに必要）
+  - pymdownx.tabbed:                 # === "Windows" / === "Mac" のタブ切替
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true                # 見出しへの直リンク
+      toc_depth: 3
+
+nav:                                 # 章の並び順をここで固定する
+  - はじめに: index.md
+  - Claude を使い始める:
+      - 1. Claude とは何か: 01-what-is-claude.md
+      - 2. 契約する: 02-signup.md
+      - 3. Claude.ai の基本: 03-basics.md
+  - 実際に使う:
+      - 4. 仕事で使う実例集: 04-examples.md
+      - 5. うまく使うコツ: 05-tips.md
+      - 6. 気をつけること: 06-cautions.md
+  - もう一歩先へ:
+      - 7. Claude Code へ進む: 07-claude-code.md
+      - 8. Claude Code 実践: 08-claude-code-practice.md
+  - 困ったとき:
+      - 9. FAQ・トラブル対応: 09-faq.md
+      - 用語集とリンク集: 99-glossary.md
+
+copyright: 2026年8月時点の情報にもとづいて書いています
