@@ -57,20 +57,22 @@ markdown_extensions:
       toc_depth: 3
 
 nav:                                 # 章の並び順をここで固定する
-  - はじめに: index.md
-  - Claude を使い始める:
-      - 1. Claude とは何か: 01-what-is-claude.md
-      - 2. 契約する: 02-signup.md
-      - 3. Claude.ai の基本: 03-basics.md
+  - はじめに:
+      - このサイトについて: index.md
+      - 1. なぜ Claude Code なのか: 01-why-claude-code.md
+  - 使い始める:
+      - 2. Pro を契約する: 02-pro-plan.md
+      - 3. インストールする: 03-setup.md
+      - 4. 最初のセッション: 04-first-session.md
   - 実際に使う:
-      - 4. 仕事で使う実例集: 04-examples.md
-      - 5. うまく使うコツ: 05-tips.md
-      - 6. 気をつけること: 06-cautions.md
-  - もう一歩先へ:
-      - 7. Claude Code へ進む: 07-claude-code.md
-      - 8. Claude Code 実践: 08-claude-code-practice.md
+      - 5. 実例集（コードを書かない仕事）: 05-examples.md
+      - 6. 実例集（コードを書く人向け）: 06-examples-dev.md
+      - 7. 使いこなす: 07-power-up.md
+  - 補足:
+      - 8. チャットとの使い分け: 08-with-chat.md
+      - 9. 気をつけること: 09-cautions.md
   - 困ったとき:
-      - 9. FAQ・トラブル対応: 09-faq.md
+      - 10. FAQ・トラブル対応: 10-faq.md
       - 用語集とリンク集: 99-glossary.md
 
 copyright: 2026年8月時点の情報にもとづいて書いています

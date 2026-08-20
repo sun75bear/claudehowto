@@ -2,63 +2,82 @@
 
 ## 用語集
 
-**Claude（クロード）**
-: Anthropic 社が提供する対話型 AI サービス。このサイトの主題。
-
-**Anthropic（アンソロピック）**
-: Claude を開発しているアメリカの企業。
-
-**Claude.ai**
-: ブラウザで Claude を使うためのサイト。デスクトップ／モバイルアプリも同じ中身。
-
 **Claude Code**
-: パソコンの中のファイルを Claude が直接読み書きできるようにする道具。Pro プラン以上が必要。
+: パソコンの中のファイルを直接読み書きし、コマンドまで実行できる Claude。このサイトの主題。Pro プラン以上が必要。
 
-**プロンプト**
-: Claude への指示文のこと。このサイトでは「指示文」と書いています。
+**Claude / Anthropic**
+: Claude は Anthropic 社が提供する AI サービス。Anthropic はアメリカの企業。
 
-**Artifacts（アーティファクト）**
-: 長い文章や表などの成果物が、チャットとは別枠のウィンドウに表示される機能。
+**エージェント型**
+: 一度の指示で、計画を立てて複数の手順を自分で進める働き方。Claude Code の性質。
 
-**プロジェクト（Projects）**
-: 資料をまとめて登録しておき、その中の会話で共通の前提として使う機能。
+**セッション**
+: Claude との1つの作業のまとまり。それぞれ独立した文脈を持ち、同時に複数開ける。
+
+**権限モード**
+: Claude Code がどこまで自分の判断で実行してよいかの設定。Manual / Plan / Accept edits / Auto の4種。
+
+**Plan モード**
+: ファイルを変更せず、方針の提案だけをさせるモード。大きな作業の前に使う。
+
+**差分ビュー（diff）**
+: 変更前と変更後の違いを表示する画面。緑が追加、赤が削除。承認前に必ず読む。
+
+**`CLAUDE.md`**
+: 作業フォルダに置いておくと、Claude Code が毎回読んでくれる指示書。毎回の説明を省ける。
+
+**スキル**
+: 繰り返す作業を手順として登録し、`/` から呼び出せるようにしたもの。チームで共有できる。
+
+**スラッシュコマンド**
+: `/help` `/clear` `/init` のように `/` で始まる特別なコマンド。
+
+**MCP / コネクタ**
+: Claude Code を手元のファイル以外（Google Drive、Slack、GitHub など）につなぐ仕組み。
+
+**サブエージェント**
+: 大きな作業を分担させるために、Claude Code が内部で動かす別の Claude。
+
+**使用量クレジット**
+: プランの上限に達したあと、従量課金で使い続けるための仕組み。
+
+**5時間セッション上限 / 週次上限**
+: Claude の使用量の枠。2段構えになっており、チャットと Claude Code で合算される。
 
 **ハルシネーション**
-: AI が事実でないことをもっともらしく答えてしまう現象。「もっともらしい間違い」と考えてください。
-
-**トークン**
-: AI が文章を処理する単位。おおむね「文章の長さ」に対応し、使用量の上限に関係します。
+: AI が事実でないことをもっともらしく答えてしまう現象。
 
 **コンテキスト**
-: Claude が今の会話で参照している情報のまとまり。会話が長くなると入りきらなくなり、精度が落ちます。
+: Claude が今の作業で抱えている情報のまとまり。増えすぎると精度が落ちるので `/clear` する。
 
 **ターミナル / PowerShell**
-: 文字でコマンドを打ってパソコンを操作する画面。Claude Code のターミナル版で使います。
+: 文字でコマンドを打ってパソコンを操作する画面。デスクトップアプリを使うなら不要。
 
-**CLAUDE.md**
-: 作業フォルダに置いておくと Claude Code が毎回読んでくれる、指示や前提を書いたファイル。
-
-**Pro プラン**
-: Claude の個人向け有料プラン。月 $20（2026年8月時点）。Claude Code が使えるようになります。
-
-**MCP**
-: Claude が外部のサービスやデータに接続するための仕組み。発展的な話題なのでこのサイトでは扱いません。
+**Git**
+: ファイルの変更履歴を管理する仕組み。Windows で Claude Code のローカル作業をするには必要。
 
 ## リンク集
 
-### 公式
+### まず見るもの
 
 - [Claude を使う（claude.ai）](https://claude.ai)
 - [料金プラン](https://claude.com/pricing)
-- [アプリのダウンロード](https://claude.com/download)
-- [ヘルプセンター](https://support.claude.com)
+- [デスクトップアプリのダウンロード](https://claude.com/download)
 
 ### Claude Code
 
 - [公式ドキュメント（概要）](https://code.claude.com/docs/en/overview)
-- [クイックスタート](https://code.claude.com/docs/en/quickstart)
-- [セットアップ手順](https://code.claude.com/docs/en/setup)
+- [デスクトップアプリのクイックスタート](https://code.claude.com/docs/en/desktop-quickstart)
+- [ターミナル版のセットアップ](https://code.claude.com/docs/en/setup)
+- [よくあるワークフロー](https://code.claude.com/docs/en/common-workflows)
+- [ベストプラクティス](https://code.claude.com/docs/en/best-practices)
+- [MCP のクイックスタート](https://code.claude.com/docs/en/mcp-quickstart)
 - [インストールのトラブルシュート](https://code.claude.com/docs/en/troubleshoot-install)
+
+### サポート
+
+- [ヘルプセンター](https://support.claude.com)
+- [使用量と上限について](https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work)
 
 !!! tip "英語のドキュメントを読むとき"
     URL を Claude に貼り付けて「このページを日本語で要約して」と頼めば、そのまま読めます。英語であることは障害になりません。

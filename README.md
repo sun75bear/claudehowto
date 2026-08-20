@@ -1,6 +1,8 @@
-# はじめての Claude（紹介サイト）
+# Claude Code のすすめ（紹介サイト）
 
-Claude の契約から実務での使い方までを紹介する静的サイトです。Markdown で書き、MkDocs Material でビルドして GitHub Pages に公開します。
+Claude Code の契約から実務での使い方までを紹介する静的サイトです。Markdown で書き、MkDocs Material でビルドして GitHub Pages に公開します。
+
+**主題は Claude Code。** チャット（Claude.ai）は他社サービスと横並びで差別化にならないため、「使い分け」の1ページに留めています。読者には非開発者を含むため、ターミナルではなく**デスクトップアプリを主軸**に説明しています。
 
 公開URL: （リポジトリ作成後にここへ記入）
 
@@ -63,10 +65,13 @@ git push
 
 ## スクリーンショットについて
 
-本文中に `<!-- TODO(画像): ... -->` の形でプレースホルダを置いてあります。Claude.ai にログインした状態で撮影し、`docs/assets/img/` に指定のファイル名で保存したうえで、コメントを `![説明](assets/img/xxx.png)` に置き換えてください。
+本文中に `<!-- TODO(画像): ... -->` の形でプレースホルダを置いてあります。Claude Code デスクトップアプリで撮影し、`docs/assets/img/` に指定のファイル名で保存したうえで、コメントを `![説明](assets/img/xxx.png)` に置き換えてください。
+
+必要な8枚: `desktop-code-tab.png` / `select-folder.png` / `permission-mode.png` / `manual-approval.png` / `diff-view.png` / `settings-usage.png` / `slash-commands.png` / `parallel-sessions.png`
 
 ## メモ
 
 - ビルドは `mkdocs build --strict` で実行しており、リンク切れがあると失敗します
 - 料金・手順は 2026年8月時点の情報です。本文の `!!! note` に日付を明記しています
+- 日本語見出しへのアンカーリンクは自動採番（`#_3` など）で壊れやすいため、リンク先にする見出しには `## 見出し { #explicit-id }` で明示 ID を付けています
 - 将来 S3 に移す場合は `mkdocs build` が生成する `site/` をそのまま同期すれば動きます
