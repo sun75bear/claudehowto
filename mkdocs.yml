@@ -2,11 +2,9 @@
 site_name: はじめての Claude
 site_description: 契約から実務での使い方まで、Claude をゼロから始めるための案内
 
-# TODO: リポジトリを作ったら、次の3行のコメントを外して <USER> / <REPO> を実際の名前にする
-#        （site_url を設定するとローカルプレビューも /<REPO>/ 配下になります）
-# site_url: https://<USER>.github.io/<REPO>/
-# repo_url: https://github.com/<USER>/<REPO>
-# edit_uri: edit/main/docs/
+site_url: https://sun75bear.github.io/claudehowto/
+repo_url: https://github.com/sun75bear/claudehowto
+edit_uri: edit/main/docs/
 
 theme:
   name: material
